@@ -6,6 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import About from "./Pages/About";
 import Qualification from "./components/Qualification";
+import Skills from "./components/Skills";
 
 export default function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function App() {
       <Hero />
       <About />
       <Qualification />
+      <Skills />
     </>
   );
 }
