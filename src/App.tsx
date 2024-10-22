@@ -1,12 +1,26 @@
-import { Button } from "./components/ui/button";
+import { useEffect } from "react";
+import Hero from "./components/Hero";
+import Navbar from "./components/Nav";
+// Animation package
+import Aos from "aos";
+import "aos/dist/aos.css";
+import About from "./Pages/About";
+import Qualification from "./components/Qualification";
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1800,
+      offset: 100,
+      disable: "mobile",
+    });
+  }, []);
   return (
-    <div>
-      <h1>hellow</h1>
-      <Button className="ml-10 bg-red-400 text-blue-400">Click me</Button>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Qualification />
+    </>
   );
 }
-
-export default App;
