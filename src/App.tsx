@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import About from "./Pages/About";
 import Qualification from "./components/Qualification";
 import Skills from "./components/Skills";
+import Projects from "./Pages/Projects";
 
 export default function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function App() {
       <About />
       <Qualification />
       <Skills />
+      <Projects />
     </>
   );
 }
