@@ -38,7 +38,14 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <div className="container-fluid py-5 mt-10" id="skill" ref={skillRef}>
+    <div
+      className="container-fluid py-5 mt-10"
+      id="skill"
+      ref={skillRef}
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-offset="100"
+    >
       <div className="container">
         <div className="relative flex items-center justify-center mb-4">
           <h1

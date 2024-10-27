@@ -1,16 +1,8 @@
 import Card from "@/components/Card";
 import { data } from "@/data/data";
+import { TProject } from "@/Pages/Projects";
 
-export interface TProject {
-  _id?: string;
-  title: string;
-  content: string;
-  images: string[];
-  category: string;
-  createdAt?: string;
-}
-
-const Projects = () => {
+const Blog = () => {
   const mydata = data;
   return (
     <div>
@@ -19,11 +11,9 @@ const Projects = () => {
           className="text-9xl text-white uppercase"
           style={{ WebkitTextStroke: "1px #dee2e6" }}
         >
-          Projects
+          Blog
         </h1>
-        <h1 className="absolute text-4xl uppercase text-blue-400">
-          My Projects
-        </h1>
+        <h1 className="absolute text-4xl uppercase text-blue-400">My Blog</h1>
       </div>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] mx-auto">
         {mydata.map((item: TProject) => (
@@ -34,4 +24,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Blog;

@@ -1,5 +1,6 @@
 import { createElement, useState } from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import { content } from "../Content";
 
 const Navbar = () => {
@@ -21,14 +22,14 @@ const Navbar = () => {
         }`}
       >
         {nav.map((item, i) => (
-          <a
-            href={item.link}
+          <Link
+            to={item.link}
             onClick={() => setActive(i)}
             className={`text-xl p-2.5 rounded-full sm:cursor-pointer 
      ${i === active && "bg-dark_primary text-white"} `}
           >
             {createElement(item.icon)}
-          </a>
+          </Link>
         ))}
       </nav>
     </div>

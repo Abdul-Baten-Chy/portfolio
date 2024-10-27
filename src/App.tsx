@@ -4,9 +4,10 @@ import Navbar from "./components/Nav";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import About from "./Pages/About";
+import Blog from "./components/Blog";
 import Qualification from "./components/Qualification";
 import Skills from "./components/Skills";
+import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       <Qualification />
       <Skills />
       <Projects />
+      <Blog />
     </>
   );
 }

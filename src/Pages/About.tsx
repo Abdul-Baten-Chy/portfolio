@@ -2,7 +2,13 @@ import image from "../assets/img/me-pro.jpg";
 
 const About = () => {
   return (
-    <div className="container-fluid py-14" id="about">
+    <div
+      className="container-fluid py-14"
+      id="about"
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-offset="100"
+    >
       <div className="container">
         <div className="relative flex items-center justify-center mb-10">
           <h1

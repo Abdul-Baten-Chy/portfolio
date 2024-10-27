@@ -2,7 +2,13 @@ import { FaRegDotCircle } from "react-icons/fa";
 
 const Qualification = () => {
   return (
-    <div className="container-fluid py-5" id="qualification">
+    <div
+      className="container-fluid py-5"
+      id="qualification"
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-offset="100"
+    >
       <div className="container">
         <div className="relative flex items-center justify-center">
           <h1

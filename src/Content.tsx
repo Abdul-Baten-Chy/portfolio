@@ -1,5 +1,5 @@
 // import images
-import Hero_person from "./assets/images/Hero/person.png";
+import Hero_person from "./assets/images/Hero/imgOne.png";
 
 import figma from "./assets/images/Skills/figma.png";
 import nodejs from "./assets/images/Skills/node.png";
@@ -41,7 +41,7 @@ import { TbSmartHome } from "react-icons/tb";
 export const content = {
   nav: [
     {
-      link: "#home",
+      link: "/",
       icon: TbSmartHome,
     },
     {
